@@ -10,3 +10,7 @@
     color: darkgray;
     outline: 1px solid #888;
 }
+.operator{
+    background-color: darkorange;
+    color: white;
+}
