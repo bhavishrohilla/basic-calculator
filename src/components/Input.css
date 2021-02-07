@@ -5,9 +5,9 @@
     background-color: black;
     outline: 1px solid #888;
     color: #fff;
-    justify-content:space-evenly;
+    justify-content:flex-end;
     padding: 0.5em;
     font-weight: bold;
     font-size: 1.4em;
-    align-items: center;
+    align-items:centre;
 }
