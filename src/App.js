@@ -20,6 +20,23 @@ class App extends Component {
       input:this.state.input + val
     })
   };
+  addTDecimal = val => {
+    //only print decimal if there is no current decimal in the input area
+    if(this.state.input.indexOf(".") === -1) {
+      this.setState({
+        input : this.state.input + val
+      })
+    }
+  }
+  addZeroToInput = val => {
+    //if no digit is in the input area, it shouldn't print ZERO.
+    if (this.state.input !== "") {
+      this.setState({
+        input : this.state.input + val
+      })     
+    }
+  };
+
   render(){
     return (
       <div className="App">
@@ -46,8 +63,8 @@ class App extends Component {
             <Button handleClick={this.addToInput}>+</Button>
           </div>
           <div className="row">
-            <Button handleClick={this.addToInput}>.</Button>
-            <Button>0</Button>
+            <Button handleClick={this.addTDecimal}>.</Button>
+            <Button handleClick={this.addZeroToInput}>0</Button>
             <Button>=</Button>
             <Button>-</Button>
           </div>
