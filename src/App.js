@@ -54,7 +54,7 @@ class App extends Component {
       this.setState({ input : parseInt(this.state.previousNumber) + parseInt(this.state.currentNumber) });
   };
 
-  render(){
+  render() {
     return (
       <div className="App">
         <div className="calc-wrapper">
